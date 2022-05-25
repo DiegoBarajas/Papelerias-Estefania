@@ -1,13 +1,22 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 10px;
-    
 }
 
 body {
     background: #feac5e; 
     background: -webkit-linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
     background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+}
+
+a {
+    color: #ffffff;
+}
+
+.nav-main {
+    width: 95%;
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
 }
