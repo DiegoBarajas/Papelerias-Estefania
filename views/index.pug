@@ -8,28 +8,102 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        // -- CSS -- 
+        // -- CSS DOCUMENT -- 
         link(rel="stylesheet", href="/public/css/styles.css")
         // -- FONTS --
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> 
         // -- ICONS -- 
-        
-        // 
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css")
+        // -- TITLE --
         title Papelerías Estefanía
     body 
-        <div class="contanier">
-            <nav class="nav-main">
-                img(src="images/logo.jpeg" alt="PE LOGO" class="logo")
-                ul
+        div.contanier
+            // -- BARRA DE NAVEGACIÓN SUPERIOR --
+            nav.nav-main
+                img(src="public/css/img/logo.jpeg", id="logo")
+                ul.nav-menu
                     li 
                         a(href="#") REDES SOCIALES 
                     li 
-                        a(href="#") CATEGORÍAS
+                        a(href="#") CONTÁCTANOS
                     li 
-                        a(href="#") CONTACTOS 
+                        a(href="#") SUCURSALES
                     li 
-                        a(href="#") PAPELERÍAS ESTEFANÍA
-            hr
+                        a(href="#") MÁS DE NOSOTROS
+
+                ul.nav-menu-bar 
+                    li 
+                        input(type="text", class="buscador")
+                        a(href="", class="search") <i class="fa-solid fa-magnifying-glass"></i> 
+                    li 
+                        a(href="#", class="user") <i class="fa-regular fa-user"></i>  
+        hr
+
+        // -- OFERTA DEL DÍA -- 
+        header.oferta
+            //img(src="public/css/img/oferta.jpg" id="oferta-img")
+            button.button1 Ver más
+        // -- CATEGORÍAS --
+        div.buttons-area
+            div.subtitle 
+                h1 CATEGORÍAS
+            div.lapices-papeles 
+                button.b1 
+                button.b2 
+            div.medicion-manualidades
+                button.b3
+                button.b4 
+        // -- PIE DE PÁGINA --
+        footer.footer 
+            section.pie 
+                div.col1
+                    //redes sociales=social
+                    ul.social  
+                        li 
+                            a(href="#") <i class="fa-brands fa-instagram"></i> Instagram
+                        li 
+                            a(href="#") <i class="fa-brands fa-facebook"></i> Facebook
+                        li 
+                            a(href="#") <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        li 
+                            a(href="#") <i class="fa-brands fa-twitter"></i> Twitter
+                    hr
+                    //direcciones=dir
+                    div.dir 
+                        h6 Contactanos:
+                        h6 Tel: 01-800-5050
+                        h6 Correo: papeleriasestef@gmail.com 
+                        h6 Sucursales: 
+                        h6 Guadalajara: 
+                        h6 Emiliano Zapata #56 Col. Lindavista Tlaquepaque
+                        h6 Júarez #20 Col. Centro Guadalajara
+                        h6 CDMX:  
+                        h6 Periférico #239 Col. Polanco 
+                        h6 Monterrey:
+                        h6 Ávila Camacho # 487 Col. Las Torres
+                    hr
+                    //atención cliente=ac 
+                    ul.ac 
+                        li 
+                            a(href="#") Quejas y sugerencias
+                        li 
+                            a(href="#") Preguntas frecuentes
+                        li 
+                            a(href="#") Acerca de 
+                hr
+                div.creator
+                    h6 Desarrollado por Yago Vega
+
+
+
+
+            
 
