@@ -10,6 +10,8 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         // -- CSS DOCUMENT -- 
         link(rel="stylesheet", href="/public/css/styles.css")
+        // -- HTML DOCUMENTS 
+        link(rel="stylesheet", href="/views/login.pug")
         // -- FONTS --
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +46,7 @@ html(lang="en")
                         input(type="text", class="buscador")
                         a(href="", class="search") <i class="fa-solid fa-magnifying-glass"></i> 
                     li 
-                        a(href="#", class="user") <i class="fa-regular fa-user"></i>  
+                        a(href="/views/login.pug", class="user") <i class="fa-regular fa-user"></i>  
         hr
 
         // -- OFERTA DEL DÍA -- 
