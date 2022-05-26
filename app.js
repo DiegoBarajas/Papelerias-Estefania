@@ -68,6 +68,9 @@ app.get("/cliente/canasta",(req, res)=>{
     res.render("");
 });
 
+app.get("/login",(req, res)=>{
+    res.render("login");
+});
 
 //Lanzar servidor
 app.listen(port, ()=>{
