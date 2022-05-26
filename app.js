@@ -72,6 +72,18 @@ app.get("/login",(req, res)=>{
     res.render("login");
 });
 
+app.get("/empleado/login", (req, res)=>{
+    res.render("login-employee");
+ });
+
+app.get("/cliente/login", (req, res)=>{
+    res.render("login-client");
+});
+
+app.get("/index-empleado/login", (req, res)=> {
+    res.render("index-employee");
+});
+
 //Lanzar servidor
 app.listen(port, ()=>{
     console.log("Server launched in the port "+port);
