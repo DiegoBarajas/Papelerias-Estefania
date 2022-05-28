@@ -80,9 +80,21 @@ app.get("/cliente/login", (req, res)=>{
     res.render("login-client");
 });
 
+app.get("/crear-c/cliente", (req, res)=> {
+    res.render("create-acc-c");
+});
+
 app.get("/index-empleado/login", (req, res)=> {
     res.render("index-employee");
 });
+
+app.get("/inventario", (req, res)=> {
+    res.render("stock");
+});
+
+app.get("/agregar", (req, res)=> {
+    res.render("new-product")
+})
 
 //Lanzar servidor
 app.listen(port, ()=>{

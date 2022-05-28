@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: #ff9966;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+ul {
+    list-style: none;
+}
+
+#logo {
+    height: 75px;
+    width: auto;
+    padding: 10px 10px;
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fdcb6e;
+}
+
+.bar a{
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    color: #ffffff;
+    padding: 30px 30px;
+    margin-right: 1175px;
+}
+
+    .bar a :hover {
+        color: #525252;
+    }
+
+.busqueda {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .busqueda h2 {
+        font-family: 'Bebas Neue';
+        font-size: 40px;
+        margin-top: 100px;
+    }
+
+    .busqueda .barra-busqueda {
+        font-family: 'Nanum Gothic';
+        width: 500px;
+        height: 30px;
+        margin-top: 100px;
+    }
+        .res {
+            margin-top: 10px;
+            padding: 10px 10px;
+            width: 150px;
+            height: auto;
+            background: #fdcb6e;
+        }
+            .res :hover {
+                color: #525252;
+            }
+
+    .lista {
+        display: flex;
+        padding: 20px 20px;
+        width: 200px;
+        height: auto;
+        background: #fdcb6e;
+        margin-left: 100px;
+        margin-right: 700px;
+        margin-top: 100px;
+    }
+    .agregar {
+        display: flex;
+        padding: 20px 20px;
+        width: 200px;
+        height: auto;
+        background: #fdcb6e;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+
+.footer {
+    background: #fdcb6e;
+    margin-top: 100px;
+    font-size: 15px;
+    font-family: 'Nanum Gothic';
+    padding: 20px 20px;
+}
+    
+    h6 {
+        font-family: 'Nanum Gothic';
+        font-size: 15px;
+        color: #ffffff;
+    }
+
+    a {
+        color: #ffffff;
+        font-family: 'Nanum Gothic';
+    }
+    
+    .col1 {
+        display: flex;
+        flex: 1 1 1;
+        justify-content: space-between;
+        color: #ffffff;
+    }
+    
+        .social {
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+    
+            .social :hover {
+                color: #575555;
+            }
+    
+        .dir {
+            font-size: 15px;
+        }
+        
+        .ac {
+            margin-top: 50px;
+            margin-right: 130px;
+            
+        }
+        
+            .ac :hover {
+                color: #575555;
+            }
+    
+        .creator {
+            margin-top: 10px;
+            margin-left: 500px;
+        }

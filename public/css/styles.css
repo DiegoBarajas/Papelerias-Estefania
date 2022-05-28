@@ -69,7 +69,7 @@ ul {
 .oferta {
     width: 80%;
     height: 500px;
-    background: url(./img/oferta.jpg) no-repeat center center/cover;
+    background: url(./img/oferta-inicio.jpg) no-repeat center center/cover;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -119,23 +119,23 @@ hr {
     margin-bottom: 50px;
 }
 
-.b1 {
-    cursor: pointer;
-    width: 35%;
-    height: auto;
-    background: url(./img/Lápices.jpg) no-repeat center center/cover;
-    padding: 100px 75px;
-    margin-left: 100px;
-}
+    .b1 {
+        cursor: pointer;
+        width: 35%;
+        height: auto;
+        background: url(./img/Lápices.jpg) no-repeat center center/cover;
+        padding: 100px 75px;
+        margin-left: 100px;
+    }
 
-.b2 {
-    cursor: pointer;
-    width: 35%;
-    height: auto;
-    background: url(./img/Papeles.jpg) no-repeat center center/cover;
-    padding: 100px 75px;
-    margin-right: 100px;
-}
+    .b2 {
+        cursor: pointer;
+        width: 35%;
+        height: auto;
+        background: url(./img/Papeles.jpg) no-repeat center center/cover;
+        padding: 100px 75px;
+        margin-right: 100px;
+    }
 
 .medicion-manualidades {
     display: flex;
@@ -144,23 +144,23 @@ hr {
     margin-top: 50px;
 }
 
-.b3 {
-    cursor: pointer;
-    width: 35%;
-    height: auto;
-    background: url(./img/Medición.jpg) no-repeat center center/cover;
-    padding: 100px 75px;
-    margin-left: 100px;
-}
+    .b3 {
+        cursor: pointer;
+        width: 35%;
+        height: auto;
+        background: url(./img/Medición.jpg) no-repeat center center/cover;
+        padding: 100px 75px;
+        margin-left: 100px;
+    }
 
-.b4 {
-    cursor: pointer;
-    width: 35%;
-    height: auto;
-    background: url(./img/Manualidades.jpg) no-repeat center center/cover;
-    padding: 100px 75px;
-    margin-right: 100px;
-}
+    .b4 {
+        cursor: pointer;
+        width: 35%;
+        height: auto;
+        background: url(./img/Manualidades.jpg) no-repeat center center/cover;
+        padding: 100px 75px;
+        margin-right: 100px;
+    }
 
 .footer {
     background: #1abc9c;

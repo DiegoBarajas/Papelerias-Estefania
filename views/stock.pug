@@ -1,0 +1,84 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        // -- CSS DOCUMENT --
+        link(rel="stylesheet", href="/public/css/stock.css")
+        // -- FONTS --
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">  
+        // -- ICONS --
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css")
+        // -- TITLE --
+        title inventario
+    body
+        // BARRA SUPERIOR 
+        div.nav-menu 
+            ul.bar
+                li 
+                    img(src="public/css/img/logo.jpeg", id="logo")
+                li 
+                    a(href="/index-empleado/login") Inicio 
+        
+            // BARRA DE BÚSQUEDA 
+            div.busqueda
+                h2 Inventario
+                input(type="number", class="barra-busqueda")
+                a(href="#", class="res") Buscar producto
+
+            // LISTA DE PRODUCTOS
+            div.lista-productos
+                a(href="#", class="lista") Lista de productos
+
+            // AGREGAR PRODUCTOS
+            div.agregar-productos
+                a(href="/agregar", class="agregar") Agregar productos
+        // -- PIE DE PÁGINA --
+        footer.footer 
+            section.pie 
+                div.col1
+                    //redes sociales=social
+                    ul.social  
+                        li 
+                            a(href="#") <i class="fa-brands fa-instagram"></i> Instagram
+                        li 
+                            a(href="#") <i class="fa-brands fa-facebook"></i> Facebook
+                        li 
+                            a(href="#") <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        li 
+                            a(href="#") <i class="fa-brands fa-twitter"></i> Twitter
+                    hr
+                    //direcciones=dir
+                    div.dir 
+                        h6 Contactanos:
+                        h6 Tel: 01-800-5050
+                        h6 Correo: papeleriasestef@gmail.com 
+                        h6 Sucursales: 
+                        h6 Guadalajara: 
+                        h6 Emiliano Zapata #56 Col. Lindavista Tlaquepaque
+                        h6 Júarez #20 Col. Centro Guadalajara
+                        h6 CDMX:  
+                        h6 Periférico #239 Col. Polanco 
+                        h6 Monterrey:
+                        h6 Ávila Camacho # 487 Col. Las Torres
+                    hr
+                    //atención cliente=ac 
+                    ul.ac 
+                        li 
+                            a(href="#") Quejas y sugerencias
+                        li 
+                            a(href="#") Preguntas frecuentes
+                        li 
+                            a(href="#") Acerca de 
+                hr
+                div.creator
+                    h6 Desarrollado por Yago Vega

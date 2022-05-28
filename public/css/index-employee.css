@@ -10,3 +10,70 @@ body {
     background: -webkit-linear-gradient(to right, #12FFF7, #B3FFAB);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #12FFF7, #B3FFAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.user {
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+    .user-button {
+        color: #ffffff;
+        font-family: 'Roboto';
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+
+.inventario-pedidos {
+    display: flex;
+    flex: 1 1;
+    justify-content: space-between;
+}
+
+.b1 {
+    cursor: pointer;
+    width: 40%;
+    height: auto;
+    background: url(./img/Inventario.jpg) no-repeat center center/cover;
+    padding: 125px 100px;
+    margin-top: 50px;
+    margin-left: 110px;
+}
+
+.b2 {
+    cursor: pointer;
+    width: 40%;
+    height: auto;
+    background: url(./img/Pedidos.jpg) no-repeat center center/cover;
+    padding: 125px 100px;
+    margin-top: 50px;
+    margin-right: 110px;
+}
+
+.proveedores-oferta {
+    display: flex;
+    flex: 1 1;
+    justify-content: space-between;
+}
+
+.b3 {
+    cursor: pointer;
+    width: 40%;
+    height: auto;
+    background: url(./img/Proveedores.jpg) no-repeat center center/cover;
+    padding: 125px 100px;
+    margin-top: 50px;
+    margin-left: 110px;
+    margin-bottom: 125px;
+}
+
+.b4 {
+    cursor: pointer;
+    width: 40%;
+    height: auto;
+    background: url(./img/Oferta.jpg) no-repeat center center/cover;
+    padding: 125px 100px;
+    margin-top: 50px;
+    margin-right: 110px;
+    margin-bottom: 125px;
+}
