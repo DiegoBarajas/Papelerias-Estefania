@@ -6,10 +6,185 @@
 }
 
 body {
-
+    background: #ff9966;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 ul {
    list-style: none; 
 }
 
+#logo {
+    height: 75px;
+    width: auto;
+    padding: 10px 10px;
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fdcb6e;
+}
+
+    .bar a{
+        font-family: 'Bebas Neue';
+        font-size: 20px;
+        color: #ffffff;
+        padding: 30px 30px;
+        margin-right: 1175px;
+    }
+
+        .bar a :hover {
+            color: #525252;
+        }
+
+h1 {
+    display: flex;
+    padding: 100px;
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    margin-left: 400px;
+}
+
+.ingresar-datos {
+    display: flex;
+    flex: 1 1;
+}
+
+.ingresar {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    background: #fdcb6e;
+    margin-left: 100px;
+    padding: 20px 20px;
+}
+
+    .ingresar h6 {
+        font-family: 'Nanum Gothic';
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }
+        .nom {
+            width: 350px;
+            height: 25px;
+        }   
+        .marca {
+            width: 350px;
+            height: 25px;
+        }
+        .id {
+            width: 175px;
+            height: 25px;
+        }
+        .tamaño {
+            width: 175px;
+            height: 25px;
+        }
+        .color {
+            width: 175px;
+            height: 25px;
+            background: #575555;
+            font-family: 'Roboto';
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+.ingresar2 {
+    width: 44%;
+    background: #fdcb6e;
+    padding: 20px 0;
+    font-family: 'Nanum Gothic';
+    font-size: 15px;
+}
+    .ingresar2 h6 {
+        font-family: 'Nanum Gothic';
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }
+        .desc {
+            width: 400px;
+            height: 150px;
+        }
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 175px;
+            height: 25px;
+            background: #575555;
+            font-family: 'Roboto';
+            font-size: 15px;
+        }
+        .agregar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 25px;
+            margin-top: 100px;
+            margin-left: 450px;
+            background: #ffa502;
+            font-family: 'Roboto';
+        }
+
+
+.footer {
+    background: #fdcb6e;
+    margin-top: 100px;
+    font-size: 15px;
+    font-family: 'Nanum Gothic';
+    padding: 20px 20px;
+}
+    
+    h6 {
+        font-family: 'Nanum Gothic';
+        font-size: 15px;
+        color: #ffffff;
+    }
+
+    a {
+        color: #ffffff;
+        font-family: 'Nanum Gothic';
+    }
+    
+    .col1 {
+        display: flex;
+        flex: 1 1 1;
+        justify-content: space-between;
+        color: #ffffff;
+    }
+    
+        .social {
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+    
+            .social :hover {
+                color: #575555;
+            }
+    
+        .dir {
+            font-size: 15px;
+        }
+        
+        .ac {
+            margin-top: 50px;
+            margin-right: 130px;
+            
+        }
+        
+            .ac :hover {
+                color: #575555;
+            }
+    
+        .creator {
+            margin-top: 10px;
+            margin-left: 500px;
+        }

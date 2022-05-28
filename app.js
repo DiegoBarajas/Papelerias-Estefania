@@ -38,14 +38,14 @@ app.get("/empleado/inventario",(req, res)=>{
 });
 
 //--- Clientes ------------------------------------------------------------------------
-//Menu Cliente
-app.get("/cliente/menu",(req, res)=>{
-    res.render("");
+//Crear cuenta
+app.get("/cliente-acc",(req, res)=>{
+    res.render("create-acc");
 });
 
 //Productos de escritura
 app.get("/cliente/poductos/escritura",(req, res)=>{
-    res.render("");
+    res.render("lapices");
 });
 
 //Productos de papel

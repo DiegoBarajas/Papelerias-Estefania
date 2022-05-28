@@ -5,7 +5,7 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         // -- CSS DOCUMENT --
-        link(rel="stylesheet", href="/public/css/new-product.css")
+        link(rel="stylesheet", href="/public/css/create-acc.css")
         // -- FONTS --
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,53 +19,25 @@ html(lang="en")
         // -- ICONS --
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css")
         // -- TITLE --
-        title Agregar producto
+        title Crear cuenta
     body 
-        //  BARRA SUPERIOR 
-        div.nav-menu 
-            ul.bar
-                li 
-                    img(src="public/css/img/logo.jpeg", id="logo")
-                li 
-                    a(href="/index-empleado/login") Inicio 
-        // INGRESO DE DATOS
-        h1 Agregar producto
-        div.ingresar-datos
-            ul.ingresar 
-                li 
-                    h6 Nombre del producto 
-                    input(type="text", class="nom")
-                li 
-                    h6 Marca
-                    input(type="text", class="marca")
-                li 
-                    h6 Código del producto
-                    input(type="number", class="id")
-                li 
-                    h6 Tamaños (cm)
-                    input(type="number", class="tamaño")
-                li 
-                    h6 Colores 
-                    input(type="image", class="color")
-                li 
-                    h6 Precio
-                    input(type="number", class="precio")
-            ul.ingresar2     
-                li 
-                    h6 Descripción
-                    input(type="text", class="desc")
-                li 
-                    h6 Seleccionar imagen
-                    input(type="image", class="img")
-                li 
-                    a(href="", class="agregar") Agregar
+        div.container 
+            // -- BARRA DE NAVEGACIÓN --
+            nav.menu 
+                ul.nav-menu 
+                    li 
+                        img(src="/public/css/img/logo.jpeg", id="logo")
+                    li 
+                        a(href="/") Inicio  
+        // -- INGRESO DE DATOS
+
 
         // -- PIE DE PÁGINA --
         footer.footer 
             section.pie 
-                div.col1
-                    //redes sociales=social
-                    ul.social  
+                div.feet
+                    // REDES SOCIALES = social 
+                    ul.social 
                         li 
                             a(href="#") <i class="fa-brands fa-instagram"></i> Instagram
                         li 
@@ -75,8 +47,8 @@ html(lang="en")
                         li 
                             a(href="#") <i class="fa-brands fa-twitter"></i> Twitter
                     hr
-                    //direcciones=dir
-                    div.dir 
+                    // DIRECCIONES = dir
+                    div.dir
                         h6 Contactanos:
                         h6 Tel: 01-800-5050
                         h6 Correo: papeleriasestef@gmail.com 
@@ -89,14 +61,14 @@ html(lang="en")
                         h6 Monterrey:
                         h6 Ávila Camacho # 487 Col. Las Torres
                     hr
-                    //atención cliente=ac 
+                    //ATENCIÓN AL CLIENTE = ac
                     ul.ac 
                         li 
                             a(href="#") Quejas y sugerencias
                         li 
                             a(href="#") Preguntas frecuentes
                         li 
-                            a(href="#") Acerca de 
+                            a(href="#") Acerca de
                 hr
-                div.creator
+                div.creator 
                     h6 Desarrollado por Yago Vega
