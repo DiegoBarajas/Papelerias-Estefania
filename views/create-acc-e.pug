@@ -5,7 +5,7 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         // -- CSS DOCUMENT --
-        link(rel="stylesheet", href="/public/css/create-acc.css")
+        link(rel="stylesheet", href="/public/css/create-acc-e.css")
         // -- FONTS --
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@ html(lang="en")
         // -- ICONS --
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css")
         // -- TITLE --
-        title Crear cuenta
+        title crear cuenta
     body 
         div.container 
             // -- BARRA DE NAVEGACIÓN --
@@ -28,16 +28,39 @@ html(lang="en")
                     li 
                         img(src="/public/css/img/logo.jpeg", id="logo")
                     li 
-                        a(href="/") Inicio  
-        // -- INGRESO DE DATOS
-
+                        a(href="/") Inicio
+        // INGRESO DE DATOS 
+        div.datos
+            ul.datos-user
+                li 
+                    h2 Crear cuenta
+                li 
+                    h6 Nombre
+                    input(type="text", class="nom")
+                li 
+                    h6 Apellido(s)
+                    input(type="text", class="ap")
+                li
+                    h6 Crear ID 
+                    input(type="num", class="id")
+                    h6 Debe contener 8 números aleatorios
+                li 
+                    h6 Correo 
+                    input(type="text", class="correo")
+                li 
+                    h6 Contraseña
+                    input(type="text", class="pass")
+                    h6 Debe contener: 
+                    h6 Mínimo 6 caracteres
+                li 
+                    a(href="/empleado/login", class="crear") Crear cuenta
 
         // -- PIE DE PÁGINA --
         footer.footer 
             section.pie 
-                div.feet
-                    // REDES SOCIALES = social 
-                    ul.social 
+                div.feet 
+                    // REDES SOCIALES = social
+                    ul.social   
                         li 
                             a(href="#") <i class="fa-brands fa-instagram"></i> Instagram
                         li 

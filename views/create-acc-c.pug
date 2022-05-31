@@ -19,7 +19,7 @@ html(lang="en")
         // -- ICONS --
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css")
         // -- TITLE --
-        title crear cuenta
+        title Crear cuenta
     body 
         div.container 
             // -- BARRA DE NAVEGACIÓN --
@@ -28,8 +28,8 @@ html(lang="en")
                     li 
                         img(src="/public/css/img/logo.jpeg", id="logo")
                     li 
-                        a(href="/") Inicio
-        // INGRESO DE DATOS 
+                        a(href="/") Inicio  
+        // -- INGRESO DE DATOS
         div.datos
             ul.datos-user
                 li 
@@ -40,10 +40,6 @@ html(lang="en")
                 li 
                     h6 Apellido(s)
                     input(type="text", class="ap")
-                li
-                    h6 Crear ID 
-                    input(type="num", class="id")
-                    h6 Debe contener 8 números aleatorios
                 li 
                     h6 Correo 
                     input(type="text", class="correo")
@@ -53,14 +49,15 @@ html(lang="en")
                     h6 Debe contener: 
                     h6 Mínimo 6 caracteres
                 li 
-                    a(href="/empleado/login", class="crear") Crear cuenta
+                    a(href="/cliente/login", class="crear") Crear cuenta
+
 
         // -- PIE DE PÁGINA --
         footer.footer 
             section.pie 
-                div.feet 
-                    // REDES SOCIALES = social
-                    ul.social   
+                div.feet
+                    // REDES SOCIALES = social 
+                    ul.social 
                         li 
                             a(href="#") <i class="fa-brands fa-instagram"></i> Instagram
                         li 

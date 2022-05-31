@@ -1,14 +1,14 @@
 * {
-    text-decoration: none;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 body {
-    background: #076585;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 ul {
@@ -74,20 +74,19 @@ ul {
             cursor: pointer;
             background: #525252;
         }
-
-
-
-hr {
-    margin: 20px 0;
-    color: #ffffff;
-}
+            
 
 .footer {
     background: #0093AB;
     font-family: 'Nanum Gothic';
     font-size: 15px;
     padding: 20px 20px;
-    margin-top: 100px;
+    margin-top: 100px; 
+}
+
+hr {
+    margin: 20px 0;
+    color: #ffffff;
 }
 
     .footer a {

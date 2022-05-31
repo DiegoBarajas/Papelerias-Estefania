@@ -12,6 +12,11 @@ app.get("/",(req, res)=>{
 });
 
 //--- Empleados ------------------------------------------------------------------------
+//Crear cuenta
+app.get("/crear-e", (req, res)=> {
+    res.render("create-acc-e");
+});
+
 //Menu Empleado
 app.get("/empleado/menu",(req, res)=>{
     res.render("");
@@ -39,8 +44,8 @@ app.get("/empleado/inventario",(req, res)=>{
 
 //--- Clientes ------------------------------------------------------------------------
 //Crear cuenta
-app.get("/cliente-acc",(req, res)=>{
-    res.render("create-acc");
+app.get("/crear-c",(req, res)=>{
+    res.render("create-acc-c");
 });
 
 //Productos de escritura
@@ -74,14 +79,10 @@ app.get("/login",(req, res)=>{
 
 app.get("/empleado/login", (req, res)=>{
     res.render("login-employee");
- });
+});
 
 app.get("/cliente/login", (req, res)=>{
     res.render("login-client");
-});
-
-app.get("/crear-c/cliente", (req, res)=> {
-    res.render("create-acc-c");
 });
 
 app.get("/index-empleado/login", (req, res)=> {
