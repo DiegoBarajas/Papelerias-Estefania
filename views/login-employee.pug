@@ -32,19 +32,19 @@ html(lang="en")
         
         // -- INGRESO DE DATOS --
         div.cuadro-texto
-            ul
-                li 
+            form(action="/try_login_em", method="POST")
+                div 
                     h2 Iniciar sesión 
-                li 
+                div 
                     a(href="/crear-e") Crear cuenta
-                li 
-                    h6 ID 
-                    input(type="num", class="id") 
-                li 
+                div 
+                    h6 Correo 
+                    input(type="email", class="id", name="correo", required) 
+                div 
                     h6 Contraseña
-                    input(type="text", class="password") 
-                li 
-                    a(href="/index-empleado/login", class="button1") Iniciar sesion
+                    input(type="password", class="password", name="password", required) 
+                div 
+                    input(type="submit", class="button1", value="Iniciar sesion") 
 
         // -- PIE DE PÁGINA 
         footer.footer 

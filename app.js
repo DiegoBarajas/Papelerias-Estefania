@@ -1,6 +1,44 @@
 const express = require ("express");
+const mysql = require ("mysql");
 const app = express();
 const port = 8080;
+const conexion = mysql.createConnection({
+    host: "localhost",
+    database: "papeleria",
+    user: "root",
+    password: ""
+});
+
+app.use(express.json());
+app.use(express.urlencoded({extended: [ true ]}));
+
+var sesion = {
+    correo: undefined,
+    contraseña: undefined
+};
+
+//CONECION DB ------------------------------------------------------------------
+/*conexion.connect(function(error){
+    if(error){
+        throw(error);
+    }else{
+        console.log("Conexion Exitosa");
+    }
+});
+
+conexion.query("select * from usuario", (error, results, fields)=>{
+    if(error){
+        throw error;
+    }
+
+    results.forEach(results => {
+        console.log(results);
+    });
+});
+
+conexion.end();
+*/
+//----------------------------------------------------------------------------------------------------------
 
 app.use("/public",express.static("public"));
 
@@ -9,6 +47,40 @@ app.set("view engine", "pug");
 //--- Index ----------------------------------------------------------------------------
 app.get("/",(req, res)=>{
     res.render("index");
+});
+
+app.post("/try_login_us",(req, res)=>{
+    conexion.query("select * from usuario", (error, results, fields)=>{
+        if(error)
+            throw error;
+        
+        let band = false;
+        results.forEach(results => {
+            if(req.body.correo == results.correo && req.body.password == results.password && results.tipo=="usu"){
+                res.redirect("/");
+                band = true;
+            }
+        });
+        if(!band)
+            res.redirect("/cliente/login")
+    });
+});
+
+app.post("/try_login_em",(req, res)=>{
+    conexion.query("select * from usuario", (error, results, fields)=>{
+        if(error)
+            throw error;
+        
+        let band = false;
+        results.forEach(results => {
+            if(req.body.correo == results.correo && req.body.password == results.password && results.tipo=="adm"){
+                res.redirect("/inventario");
+                band = true;
+            }
+        });
+        if(!band)
+            res.redirect("/empleado/login")
+    });
 });
 
 //--- Empleados ------------------------------------------------------------------------
@@ -96,6 +168,20 @@ app.get("/inventario", (req, res)=> {
 app.get("/agregar", (req, res)=> {
     res.render("new-product")
 })
+
+app.post("/add_producto",(req, res)=>{
+    let JSON = {
+        nombre: req.body.nombre,
+        marca: req.body.marca,
+        codigo: req.body.codigo,
+        size: req.body.size,
+        color: req.body.color,
+        precio: req.body.precio,
+        descripcion: req.body.descripcion
+    }
+
+    console.log(JSON);
+});
 
 //Lanzar servidor
 app.listen(port, ()=>{

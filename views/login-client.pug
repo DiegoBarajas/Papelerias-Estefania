@@ -32,19 +32,19 @@ html(lang="en")
 
         // -- INGRESO DE DATOS --
         div.cuadro-texto
-            ul 
-                li  
+            form(action="/try_login_us", method="POST") 
+                div  
                     h2 Iniciar Sesión 
-                li 
+                div 
                     a(href="/crear-c") Crear cuenta
-                li 
+                div  
                     h6 Correo electrónico
-                    input(type="text", class="email")
-                li 
+                    input(type="email", class="email", name="correo", required)
+                div  
                     h6 Contraseña
-                    input(type="text", class="password")
-                li 
-                    a(href="#", class="b1") Iniciar sesion
+                    input(type="password", class="password", name="password", required)
+                div 
+                    input(type="submit",value="Iniciar sesion" , class="b1")
         
         // -- PIE DE PÁGINA --
         footer.footer 

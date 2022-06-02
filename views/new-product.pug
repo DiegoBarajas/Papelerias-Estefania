@@ -31,34 +31,32 @@ html(lang="en")
         // INGRESO DE DATOS
         h1 Agregar producto
         div.ingresar-datos
-            ul.ingresar 
-                li 
-                    h6 Nombre del producto 
-                    input(type="text", class="nom")
-                li 
-                    h6 Marca
-                    input(type="text", class="marca")
-                li 
-                    h6 Código del producto
-                    input(type="number", class="id")
-                li 
-                    h6 Tamaños (cm)
-                    input(type="number", class="tamaño")
-                li 
-                    h6 Colores 
-                    input(type="image", class="color")
-                li 
-                    h6 Precio
-                    input(type="number", class="precio")
-            ul.ingresar2     
-                li 
-                    h6 Descripción
-                    input(type="text", class="desc")
-                li 
-                    h6 Seleccionar imagen
-                    input(type="image", class="img")
-                li 
-                    a(href="", class="agregar") Agregar
+            form(action="/add_producto", method="POST")
+                div.ingresar 
+                    div 
+                        h6 Nombre del producto 
+                        input(type="text", class="nom", name="nombre", required)
+                    div 
+                        h6 Marca
+                        input(type="text", class="marca", name="marca", required)
+                    div 
+                        h6 Código del producto
+                        input(type="number", class="id", name="codigo", required)
+                    div 
+                        h6 Tamaño
+                        input(type="number", class="tamaño", name="size", required)
+                    div 
+                        h6 Colore
+                        input(type="color", class="color", name="color", required)
+                    div 
+                        h6 Precio
+                        input(type="number", class="precio", name="precio", required)
+                div.ingresar2     
+                    div 
+                        h6 Descripción
+                        input(type="text", class="desc", name="descripcion", required)
+                    div 
+                        input(type="submit", values="Agregar", class="agregar")
 
         // -- PIE DE PÁGINA --
         footer.footer 
