@@ -14,7 +14,8 @@ app.use(express.urlencoded({extended: [ true ]}));
 
 var sesion = {
     correo: undefined,
-    contraseña: undefined
+    contraseña: undefined,
+    usuario: undefined
 };
 
 //CONECION DB ------------------------------------------------------------------
@@ -57,6 +58,12 @@ app.post("/try_login_us",(req, res)=>{
         let band = false;
         results.forEach(results => {
             if(req.body.correo == results.correo && req.body.password == results.password && results.tipo=="usu"){
+                sesion = {
+                    nombre: results.nombre+" "+results.apellido,
+                    correo: results.correo,
+                    contraseña: results.contraseña,
+                    usuario: results.tipo
+                };
                 res.redirect("/");
                 band = true;
             }
@@ -74,6 +81,12 @@ app.post("/try_login_em",(req, res)=>{
         let band = false;
         results.forEach(results => {
             if(req.body.correo == results.correo && req.body.password == results.password && results.tipo=="adm"){
+                sesion = {
+                    nombre: results.nombre+" "+results.apellido,
+                    correo: results.correo,
+                    contraseña: results.contraseña,
+                    usuario: results.tipo
+                };
                 res.redirect("/inventario");
                 band = true;
             }
@@ -180,7 +193,17 @@ app.post("/add_producto",(req, res)=>{
         descripcion: req.body.descripcion
     }
 
+    res.redirect("/inventario");
+
     console.log(JSON);
+});
+
+app.post("/crear/cliente",(req, res)=>{
+    res.redirect("/cliente/login");
+});
+
+app.post("/crear/empleado",(req, res)=>{
+    res.redirect("/empleado/login");
 });
 
 //Lanzar servidor

@@ -31,29 +31,25 @@ html(lang="en")
                         a(href="/") Inicio
         // INGRESO DE DATOS 
         div.datos
-            ul.datos-user
-                li 
+            form(action="/crear/empleado", method="POST").datos-user
+                div 
                     h2 Crear cuenta
-                li 
+                div 
                     h6 Nombre
-                    input(type="text", class="nom")
-                li 
+                    input(type="text", class="nom", name="nombre", required)
+                div 
                     h6 Apellido(s)
-                    input(type="text", class="ap")
-                li
-                    h6 Crear ID 
-                    input(type="num", class="id")
-                    h6 Debe contener 8 números aleatorios
-                li 
+                    input(type="text", class="ap", name="nombre", required)
+                div 
                     h6 Correo 
-                    input(type="text", class="correo")
-                li 
+                    input(type="email", class="correo", name="nombre", required)
+                div 
                     h6 Contraseña
-                    input(type="text", class="pass")
+                    input(type="password", class="pass", name="nombre", required)
                     h6 Debe contener: 
                     h6 Mínimo 6 caracteres
-                li 
-                    a(href="/empleado/login", class="crear") Crear cuenta
+                div 
+                    input(type="submit", value="Crear cuenta" class="crear")
 
         // -- PIE DE PÁGINA --
         footer.footer 
