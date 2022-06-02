@@ -1,5 +1,7 @@
 const express = require ("express");
+const { json } = require("express/lib/response");
 const mysql = require ("mysql");
+const { RANDOM } = require("mysql/lib/PoolSelector");
 const app = express();
 const port = 8080;
 const conexion = mysql.createConnection({
@@ -175,15 +177,45 @@ app.get("/index-empleado/login", (req, res)=> {
 });
 
 app.get("/inventario", (req, res)=> {
-    res.render("stock");
+    conexion.query("select * from producto", (error, results, fields)=>{
+        if(error)
+            throw error;
+        
+            j = {
+                nombre: [],
+                marca: [],
+                codigo: [],
+                size: [],
+                color: [],
+                precio: [],
+                descripcion: [],
+                i: 0
+            }
+
+        let band = false;
+        results.forEach(results => {
+                j.nombre.push(results.nombre);
+                j.marca.push(results.marca);
+                j.codigo.push(results.codigo);
+                j.size.push(results.size);
+                j.color.push(results.color);
+                j.precio.push(results.precio);
+                j.descripcion.push(results.descripcion);
+                j.i=j.i+1;
+
+            res.render("stock", j);
+            band = true;
+        });
+    });
 });
+
 
 app.get("/agregar", (req, res)=> {
     res.render("new-product")
 })
 
 app.post("/add_producto",(req, res)=>{
-    let JSON = {
+    let p = {
         nombre: req.body.nombre,
         marca: req.body.marca,
         codigo: req.body.codigo,
@@ -193,16 +225,53 @@ app.post("/add_producto",(req, res)=>{
         descripcion: req.body.descripcion
     }
 
+    query = "insert into producto values("+"'"+p.nombre+"'"+", "+"'"+p.marca+"'"+", "+"'"+p.codigo+"'"+", "+p.size+", "+"'"+p.color+"'"+", "+p.precio+", "+"'"+p.descripcion+"'"+")"
+    console.log("QUERY: "+query);
+
+    conexion.query(query, (err, results, field)=>{
+        if(err) throw err;
+
+        console.log(results);
+    });
+
     res.redirect("/inventario");
 
     console.log(JSON);
 });
 
 app.post("/crear/cliente",(req, res)=>{
+    var caracteres = "abcdefghijkmnpqrtuvwxyzABCDEFGHJKMNPQRTUVWXYZ2346789";
+    var contraseña = "";
+    for (i=0; i<8; i++) contraseña +=caracteres.charAt(Math.floor(Math.random()*caracteres.length)); 
+    let nombre=req.body.nombre, apellido=req.body.apellido, correo=req.body.correo, password=req.body.password, usuario="usu";
+    let query = "insert into usuario values ('"+contraseña+"'"+", "+"'"+nombre+"'"+", "+"'"+apellido+"'"+", "+"'"+correo+"'"+", "+"'"+password+"'"+", "+"'"+usuario+"'"+")"
+
+    conexion.query(query,(err, results, field)=>{
+        if(err) throw err
+
+        console.log(results);
+    });
+
+    console.log(contraseña);
+
     res.redirect("/cliente/login");
 });
 
 app.post("/crear/empleado",(req, res)=>{
+    var caracteres = "abcdefghijkmnpqrtuvwxyzABCDEFGHJKMNPQRTUVWXYZ2346789";
+    var contraseña = "";
+    for (i=0; i<8; i++) contraseña +=caracteres.charAt(Math.floor(Math.random()*caracteres.length)); 
+    let nombre=req.body.nombre, apellido=req.body.apellido, correo=req.body.correo, password=req.body.password, usuario="adm";
+    let query = "insert into usuario values ('"+contraseña+"'"+", "+"'"+nombre+"'"+", "+"'"+apellido+"'"+", "+"'"+correo+"'"+", "+"'"+password+"'"+", "+"'"+usuario+"'"+")"
+
+    conexion.query(query,(err, results, field)=>{
+        if(err) throw err
+
+        console.log(results);
+    });
+
+    console.log(contraseña);
+
     res.redirect("/empleado/login");
 });
 
