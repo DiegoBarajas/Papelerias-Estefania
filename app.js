@@ -211,6 +211,8 @@ app.get("/inventario", (req, res)=> {
             band = true;
         });
     });
+    if(!band)
+        res.redirect("/");
 });
 
 
