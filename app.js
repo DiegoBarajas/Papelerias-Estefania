@@ -181,7 +181,7 @@ app.get("/index-empleado/login", (req, res)=> {
 });
 
 app.get("/inventario", (req, res)=> {
-    conexion.query("select * from producto", (error, results, fields)=>{
+    /*conexion.query("select * from producto", (error, results, fields)=>{
         if(error)
             throw error;
         
@@ -212,7 +212,10 @@ app.get("/inventario", (req, res)=> {
         });
     });
     if(!band)
-        res.redirect("/");
+        res.redirect("/");*/
+
+
+    res.render("stock", j);
 });
 
 
