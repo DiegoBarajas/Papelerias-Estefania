@@ -63,8 +63,105 @@ a {
     width: auto;
 }
 
+/* -- CUERPO -- */
+.titulo1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+}
 
+.datos {
+    display: flex;
+    padding: 50px;
+}
 
+    .seccion1 h6{
+        font-family: 'Nanum Gothic';
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+        .nom {
+            width: 200px;
+        }
+        .calle {
+            width: 250px;
+        }
+        .colonia {
+            width: 250px;
+        }
+
+    .seccion2 {
+        
+        margin-left: 50px;
+    }
+
+.datos-tar {
+    display: flex;
+    padding: 50px;
+}
+
+.titulo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+}
+    .seccion2 h6{
+        font-family: 'Nanum Gothic';
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+        .ape {
+            width: 200px;
+        }
+        .num-in {
+            width: 100px;
+        }
+        .num-ex {
+            width: 100px;
+        }
+        .cp {
+            width: 100px;
+        }
+
+    .seccion3 h6{
+        font-family: 'Nanum Gothic';
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+        .num-serie {
+            width: 250px;
+        }
+        .sucursal si  {
+            margin-left: 5px;
+        }
+
+    .seccion4 {
+        margin-left: 50px;
+    }
+    .seccion4 h6{
+        font-family: 'Nanum Gothic';
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+.guardar {
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+    font-size: 20px;
+    font-family: 'Roboto';
+    background: #1abc9c;
+    width: 125px;
+}
 
 /* -- PIE DE PÁGINA -- */
 .footer {

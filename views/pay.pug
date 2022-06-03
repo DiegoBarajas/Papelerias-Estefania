@@ -27,7 +27,7 @@ html(lang="en")
                 img(src="public/css/img/logo.jpeg", id="logo")
                 ul.nav-menu
                     li 
-                        a(href="#") REDES SOCIALES 
+                        a(href=".social") REDES SOCIALES 
                     li 
                         a(href="#") CONTÁCTANOS
                     li 
@@ -45,7 +45,61 @@ html(lang="en")
 
         //   -- CUERPO --
 
-        
+        div.titulo1 
+             h3 Datos personales
+        div.datos
+            div.seccion1
+               
+                h6 Nombre(s)
+                input(type="text", class="nom")
+                h6 Calle
+                input(type="text", class="calle")
+                h6 Colonia
+                input(type="text", class="colonia")
+                h6 Estado
+                select(name="estado", id="estado") 
+                    option Jalisco
+                    option Nuevo León 
+                    option CDMX
+
+            div.seccion2 
+                h6 Apellido(s)
+                input(type="text", class="ape")
+                h6 Num. in. 
+                input(type="number", class="num-in")
+                h6 Num. ex. (opcional)
+                input(type="number", class="num-ex")
+                h6 Código postal
+                input(type="number", class="cp")
+        hr
+        div.titulo2 
+            h3 Datos de tarjeta 
+        div.datos-tar
+            div.seccion3
+                h6 Selecciona el método de pago
+                select(name="tipo-tar", id="tipo")
+                    option Mastercard 
+                    option Visa 
+                    option Pay-pal
+                h6 Número de serie 
+                input(type="number", class="num-serie")
+                h6 Método de envío
+                select(name="forma-envio", id="envio")
+                    option DHL 
+                    option Estafeta 
+                    option UPS
+                h6 Se recogerá en sucursal?
+                input(type="radio", name="sucursal", id="si")
+                label(for="si") Si
+                input(type="radio", name="sucursal", id="no")
+                label(for="no") No
+            div.seccion4 
+                h6 Vencimiento
+                input(type="number", class="vencimiento")      
+                h6 CVV 
+                input(type="number", class="cvv")
+        div.guardar
+            a(href="#", class="bottom") Guardar
 
 
         // -- PIE DE PÁGINA --
