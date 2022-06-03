@@ -10,6 +10,7 @@ const conexion = mysql.createConnection({
     user: "root",
     password: ""
 });
+const CON = "250698";
 
 app.use(express.json());
 app.use(express.urlencoded({extended: [ true ]}));
@@ -270,7 +271,7 @@ app.post("/crear/empleado",(req, res)=>{
 });
 
 app.post("/inter2",(req, res)=>{
-    if(req.body.id=="250698"){
+    if(req.body.id==COD){
         res.redirect("/crear-e");
     }else{
         res.redirect("/inter");
