@@ -66,6 +66,7 @@ app.post("/try_login_us",(req, res)=>{
                     contraseña: results.contraseña,
                     usuario: results.tipo
                 };
+                console.log("Sesion Iniciada");
                 res.redirect("/");
                 band = true;
             }
@@ -90,6 +91,7 @@ app.post("/try_login_em",(req, res)=>{
                     contraseña: results.contraseña,
                     usuario: results.tipo
                 };
+                console.log("Sesion Iniciada");
                 res.redirect("/inventario");
                 band = true;
             }
