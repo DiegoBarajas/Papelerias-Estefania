@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: #34e89e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: auto;   
+}
+
+/* -- BARRA DE MAVEGACIÓN -- */
+
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 20px;
+    background: #1abc9c;
+}
+
+    .nav-main ul {
+        display: flex;
+    }
+
+        .nav-main ul li {
+            padding: 10px;
+        }
+
+            .nav-main ul li a {
+                padding: 5px;
+                font-family: 'Bebas Neue';
+                font-size: 20px;
+            }
+
+                .nav-main ul li :hover {
+                    color: #575555;
+                }
+            
+                .buscador {
+                    height: 20px;
+                    width: 300px;
+                    margin-right: 5px;
+                }
+#logo {
+    height: 50px;
+    width: auto;
+}
+
+
+.footer {
+    background: #1abc9c;
+    color: #fff;
+    margin-top: 100px;
+    font-size: 15px;
+    font-family: 'Nanum Gothic';
+    padding: 20px 20px;
+}
+
+hr {
+    margin: 20px 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #000000;
+}
+
+h6 {
+    font-family: 'Nanum Gothic';
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.col1 {
+    display: flex;
+    flex: 1 1 1;
+    justify-content: space-between;
+    
+}
+
+    .social {
+        margin-top: 50px;
+        margin-left: 120px;
+    }
+
+        .social :hover {
+            color: #575555;
+        }
+
+    .ac {
+        margin-top: 50px;
+        margin-right: 130px;
+    }
+    
+        .ac :hover {
+            color: #575555;
+        }
+
+    .creator {
+        margin-top: 10px;
+        margin-left: 560px;
+    }

@@ -4,8 +4,8 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        // -- CSS DOCUMENT
-        link(rel="stylesheet", href="/public/css/login.css")
+        // -- CSS DOCUMENT -- 
+        link(rel="stylesheet", href="/public/css/intermedio.css")
         // -- FONTS --
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,20 +15,12 @@ html(lang="en")
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> 
         // -- ICONS -- 
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css")
         // -- TITLE --
-        title Iniciar Sesión 
+        title 
     body 
-        div.container
-            nav.nav-menu 
-                ul.bar
-                    li 
-                        img(src="public/css/img/logo.jpeg", id="logo")
-                    li 
-                        a(href="/") Inicio 
-
-        div.cuadro
-            a(href="/inter", class="b1") Soy empleado
-            a(href="/cliente/login", class="b2") Soy cliente
+        div.header
+            h5 Ingrese el codigo 
+            input(type="number", class="cod", required)

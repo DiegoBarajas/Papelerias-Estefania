@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: #feac5e; 
+    background: -webkit-linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+    background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+}
+
+.header {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .header h5 {
+        font-family: 'Nanum Gothic';
+        font-size: 15px;
+        margin-top: 300px;
+    }
+    .cod {
+        width: 20%;
+        height: 20px;
+        margin-top: 5px;
+        margin-bottom: 500px;
+    }

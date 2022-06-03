@@ -78,6 +78,7 @@ ul {
         margin-top: 100px;
         margin-bottom: 100px;
         background: #e84393;
+        margin-bottom: 350px;
     }
 
     hr {
@@ -87,56 +88,3 @@ ul {
         color: #000000;
     }
 
-.footer {
-    background: #1abc9c;
-    margin-top: 100px;
-    font-size: 15px;
-    font-family: 'Nanum Gothic';
-    padding: 20px 20px;
-}
-    
-    h6 {
-        font-family: 'Nanum Gothic';
-        font-size: 15px;
-        color: #ffffff;
-    }
-
-    a {
-        color: #ffffff;
-        font-family: 'Nanum Gothic';
-    }
-    
-    .col1 {
-        display: flex;
-        flex: 1 1 1;
-        justify-content: space-between;
-        color: #ffffff;
-    }
-    
-        .social {
-            margin-top: 50px;
-            margin-left: 100px;
-        }
-    
-            .social :hover {
-                color: #575555;
-            }
-    
-        .dir {
-            font-size: 15px;
-        }
-        
-        .ac {
-            margin-top: 50px;
-            margin-right: 130px;
-            
-        }
-        
-            .ac :hover {
-                color: #575555;
-            }
-    
-        .creator {
-            margin-top: 10px;
-            margin-left: 500px;
-        }

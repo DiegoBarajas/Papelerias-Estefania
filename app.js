@@ -160,8 +160,18 @@ app.get("/cliente/poductos/manualidades",(req, res)=>{
 });
 
 //Canasta
-app.get("/cliente/canasta",(req, res)=>{
-    res.render("");
+app.get("/canasta",(req, res)=>{
+    res.render("cart");
+});
+
+//PAGAR 
+app.get("/pay", (req, res)=> {
+    res.render("pay");
+});
+
+//INTERMEDIO
+app.get("/inter", (req, res)=> {
+    res.render("intermedio");
 });
 
 app.get("/login",(req, res)=>{
@@ -178,6 +188,21 @@ app.get("/cliente/login", (req, res)=>{
 
 app.get("/index-empleado/login", (req, res)=> {
     res.render("index-employee");
+});
+
+//QUEJAS Y SUGERENCIAS
+app.get("/quejas", (req, res)=> {
+    res.render("quejas");
+});
+
+//PREGUNTAS FRECUENTES
+app.get("/preguntas", (req, res)=> {
+    res.render("preguntas");
+});
+
+//ACERCA DE 
+app.get("/acerca-de", (req, res)=> {
+    res.render("acerca");
 });
 
 app.get("/inventario", (req, res)=> {
