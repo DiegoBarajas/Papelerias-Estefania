@@ -215,7 +215,7 @@ app.get("/inventario", (req, res)=> {
         res.redirect("/");*/
 
 
-    res.render("stock", j);
+    res.render("stock");
 });
 
 
