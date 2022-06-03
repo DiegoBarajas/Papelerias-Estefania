@@ -22,5 +22,7 @@ html(lang="en")
         title 
     body 
         div.header
-            h5 Ingrese el codigo 
-            input(type="number", class="cod", required)
+            form(action="/inter2", method="POST")
+                h5 Ingrese el codigo 
+                input(type="number", class="cod", name="id", required)
+                input(type="submit", values="Ir a crear cuenta")
