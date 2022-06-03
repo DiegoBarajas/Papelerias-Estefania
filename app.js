@@ -70,8 +70,9 @@ app.post("/try_login_us",(req, res)=>{
                 band = true;
             }
         });
-        if(!band)
-            res.redirect("/cliente/login")
+        if(!band){
+            res.redirect("/cliente/login");
+        }
     });
 });
 
@@ -93,8 +94,9 @@ app.post("/try_login_em",(req, res)=>{
                 band = true;
             }
         });
-        if(!band)
-            res.redirect("/empleado/login")
+        if(!band){
+            res.redirect("/empleado/login");
+        }
     });
 });
 
