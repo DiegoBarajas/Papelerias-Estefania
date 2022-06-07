@@ -10,16 +10,10 @@ const conexion = mysql.createConnection({
     user: "root",
     password: ""
 });
-const CON = "250698";
+const COD = "250698";
 
 app.use(express.json());
 app.use(express.urlencoded({extended: [ true ]}));
-
-var sesion = {
-    correo: undefined,
-    contraseña: undefined,
-    usuario: undefined
-};
 
 //CONECION DB ------------------------------------------------------------------
 /*conexion.connect(function(error){
@@ -43,6 +37,7 @@ conexion.query("select * from usuario", (error, results, fields)=>{
 conexion.end();
 */
 //----------------------------------------------------------------------------------------------------------
+
 
 app.use("/public",express.static("public"));
 
@@ -133,6 +128,11 @@ app.get("/pay", (req, res)=> {
 //INTERMEDIO
 app.get("/inter", (req, res)=> {
     res.render("intermedio");
+});
+
+//LISTA DE PRODUCTOS
+app.get("/lista", (req, res)=> {
+    res.render("list-products");
 });
 
 app.get("/login",(req, res)=>{
@@ -272,7 +272,7 @@ app.post("/crear/empleado",(req, res)=>{
 
 app.post("/inter2",(req, res)=>{
     if(req.body.id==COD){
-        res.redirect("/crear-e");
+        res.redirect("/empleado/login");
     }else{
         res.redirect("/inter");
     }

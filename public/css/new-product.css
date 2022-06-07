@@ -50,16 +50,15 @@ h1 {
 
 .ingresar-datos {
     display: flex;
-    flex: 1 1;
 }
 
 .ingresar {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 70%;
     height: auto;
     background: #fdcb6e;
-    margin-left: 100px;
+    margin-left: 70px;
     padding: 20px 20px;
 }
 
@@ -96,9 +95,11 @@ h1 {
             align-items: center;
         }
 .ingresar2 {
-    width: 44%;
+    width: 60%;
     background: #fdcb6e;
-    padding: 20px 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px 20px 20px 20px;
     font-family: 'Nanum Gothic';
     font-size: 15px;
 }
@@ -106,10 +107,10 @@ h1 {
         font-family: 'Nanum Gothic';
         font-size: 15px;
         margin-top: 10px;
-        margin-bottom: 2px;
+        margin-bottom: 10px;
     }
         .desc {
-            width: 400px;
+            width: 300px;
             height: 150px;
         }
         .img {
